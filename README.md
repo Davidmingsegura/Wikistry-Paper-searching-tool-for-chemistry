@@ -1,13 +1,14 @@
 # **Wikistry: Paper Searching Tool for Chemistry**
 
 ## **Overview**
-Wikistry is an agent tool designed to search for scientific papers related to chemistry from various sources and perform summarization. Currently, the project successfully fetches articles from **arXiv**, while support for **ACS (American Chemical Society)** is under development. The tool aims to automate literature searches and extract key information like **titles, abstracts, and links** to research papers.
+Wikistry is an agent tool designed to search for scientific papers related to chemistry from various sources and perform summarization. Currently, the project successfully fetches articles from **arXiv**, while support for other sources such as **ACS (American Chemical Society)** are under development. The tool aims to automate literature searches and extract key information like **titles, abstract, links and summarization using BART model** to research papers.
 
 ## **Features**
 - ✅ **Fetch research articles from arXiv** based on a query.
+- ✅ **Summarizes the abstract of research articles from arXiv** based on BART model.
 - 🔄 **Work in progress:** Automating article retrieval from ACS (abstract extraction needs improvement).
 - 🛠 **Uses Selenium for web scraping** (ACS) and API-based retrieval (arXiv).
-- 📄 **Outputs structured data** (title, abstract, and link) for easy reference.
+- 📄 **Outputs structured data** (title, summary and link) for easy reference.
 
 ## **Installation**
 1. **Clone the repository**:
@@ -16,7 +17,7 @@ Wikistry is an agent tool designed to search for scientific papers related to ch
    cd Wikistry-Paper-searching-tool-for-chemistry
    ```
 
-2. **Set up a Python virtual environment** (recommended):
+2. **Set up a Python virtual environment** :
    ```bash
    python3 -m venv my_environment
    source my_environment/bin/activate  # On Windows: my_environment\Scripts\activate
