@@ -1,0 +1,30 @@
+Project Overview
+
+Goal: Build an LLM-powered agent that:
+Scrapes articles or research papers based on a user-provided subject query.
+Summarizes the main new contributions and findings.
+
+Project Components
+User Input Interface:
+Accept a subject query (e.g., "Recent advances in hydrogen storage materials").
+Tools: A simple web UI using Streamlit or Gradio.
+
+Web Scraping Module:
+Scrape relevant articles from online sources (e.g., PubMed, arXiv, Springer, Google Scholar).
+Tools: Use libraries like BeautifulSoup, Scrapy, or APIs like arXiv API or Semantic Scholar API.
+Key Consideration: Ensure compliance with the terms of service for scraping.
+
+Summarization Module:
+Use a pre-trained LLM (like OpenAI GPT, Hugging Face models, or Flan-T5) for summarization.
+Fine-tune the model (if possible) using domain-specific datasets for better performance.
+
+Agent Workflow:
+Build an autonomous LLM agent to:
+Search for relevant articles.
+Extract abstracts or full texts.
+
+Generate summaries highlighting new contributions.
+Tools: Use LangChain or LlamaIndex to manage the agent's tasks and memory.
+Result Presentation:
+Display summarized results with article titles, key contributions, and links to the full text.
+Tools: Use Markdown formatting or a dashboard built with Plotly Dash or Streamlit.
