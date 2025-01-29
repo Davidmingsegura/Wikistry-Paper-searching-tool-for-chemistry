@@ -38,34 +38,14 @@ Wikistry is an agent tool designed to search for scientific papers related to ch
 
 ## **Usage**
 ### **Fetch Articles from arXiv**
-Run the following script to search for chemistry-related papers on arXiv:
-```python
-from script_agent import fetch_arxiv
+Run the app.py and search for papers on arXiv:
 
-query = "machine learning for chemistry"
-articles = fetch_arxiv(query, max_results=5)
+![](./assets/input.png)
 
-for article in articles:
-    print(f"Title: {article['title']}")
-    print(f"Abstract: {article['abstract']}")
-    print(f"Link: {article['link']}")
-    print("-" * 80)
-```
+You will then obtain the articles title, link and summary displayed as follow:
 
-### **Fetch Articles from ACS (Under Development)**
-Currently, ACS abstracts are not being extracted correctly. The function attempts to scrape **ACS publications**, but abstracts are often missing due to dynamic loading or paywalls.
-```python
-from script_agent import fetch_acs_articles_selenium
+![](./assets/article_summary_example.png)
 
-query = "machine learning for chemistry"
-articles = fetch_acs_articles_selenium(query, max_results=5)
-
-for article in articles:
-    print(f"Title: {article['title']}")
-    print(f"Abstract: {article['abstract']}")
-    print(f"Link: {article['link']}")
-    print("-" * 80)
-```
 ---
 
 ## **License**
