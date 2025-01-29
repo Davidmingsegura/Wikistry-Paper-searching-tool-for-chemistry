@@ -1,5 +1,7 @@
 # **Wikistry: Paper Searching Tool for Chemistry**
 
+![From OpenAI](./assets/banner.png)
+
 ## **Overview**
 Wikistry is an agent tool designed to search for scientific papers related to chemistry from various sources and perform summarization. Currently, the project successfully fetches articles from **arXiv**, while support for other sources such as **ACS (American Chemical Society)** are under development. The tool aims to automate literature searches and extract key information like **titles, abstract, links and summarization using BART model** to research papers.
 
