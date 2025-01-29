@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI 
 from langchain_community.llms import OpenAI
 import xml.etree.ElementTree as ET
-from arxiv_utils import (
+from src.arxiv_utils import (
     fetch_arxiv, 
     parse_arxiv_response, 
     fetch_arxiv_tool, 
